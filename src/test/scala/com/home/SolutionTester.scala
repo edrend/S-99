@@ -1,10 +1,10 @@
 package com.home
 
-import org.scalatest.junit.JUnitSuite
 import org.junit.Test
 import org.junit.Assert._
 import org.junit.Test
 import org.junit.Before
+import org.scalatest.junit.JUnitSuite
 
 class SolutionTest extends JUnitSuite {
 	@Test
