@@ -5,3 +5,4 @@ My attempt to find solution for those.
 
 I'm using eclipse+scala-ide plugin. This project depends on Scala 2.8.1 and scalatest 1.3 with JUnit 4.
 Let it crash!
+Modifiying this in the new branch
