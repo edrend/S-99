@@ -113,3 +113,8 @@ object P11{
     })
   }
 }
+object P12{
+  def decode[T](l:List[(Int, T)]):List[T] = {
+    l.flatMap(p=>List.fill(p._1)(p._2))
+  }
+}

@@ -56,4 +56,10 @@ class SolutionTest extends JUnitSuite {
       List((4,'a), 'b, (2,'c), (2,'a), 'd, (4,'e)),
       P11.encodeModified(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)))
   }
-}
+  @Test
+  def decode(){
+    assertEquals(
+      List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e),
+      P12.decode(List((4, 'a), (1, 'b), (2, 'c), (2, 'a), (1, 'd), (4, 'e))))
+  }
+} 
