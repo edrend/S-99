@@ -97,3 +97,19 @@ object P9{
 		}
 	}
 }
+object P10{
+  def encode[T](l:List[T]):List[(Int, T)]={
+    val packed = P9.pack(l)
+    packed.map(e=>(e.length,e(0)))
+  }
+}
+object P11{
+  def encodeModified[T](l:List[T]):List[Any] = {
+    P9.pack(l).map(e=>{
+    if(e.length>1)
+      (e.length,e(0))
+    else
+      e(0)
+    })
+  }
+}
