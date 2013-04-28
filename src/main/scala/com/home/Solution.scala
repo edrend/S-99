@@ -118,3 +118,14 @@ object P12{
     l.flatMap(p=>List.fill(p._1)(p._2))
   }
 }
+object P13{
+  def encodeDirect[T](l:List[T]):List[(Int, T)] = {
+    l match{
+      case Nil=>Nil
+      case h::tail=>{
+        val (f,b) = l.span(h==_)
+        (f.length,h)::encodeDirect(b)
+      }
+    }
+  }
+}

@@ -62,4 +62,10 @@ class SolutionTest extends JUnitSuite {
       List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e),
       P12.decode(List((4, 'a), (1, 'b), (2, 'c), (2, 'a), (1, 'd), (4, 'e))))
   }
+  @Test
+  def encodeDirect(){
+    assertEquals(
+      List((4,'a), (1,'b), (2,'c), (2,'a), (1,'d), (4,'e)),
+      P13.encodeDirect(List((4, 'a), (1, 'b), (2, 'c), (2, 'a), (1, 'd), (4, 'e))))
+  }
 } 
