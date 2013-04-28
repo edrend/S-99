@@ -129,3 +129,11 @@ object P13{
     }
   }
 }
+object P14{
+  def duplicate[T](l:List[T]):List[T] = {
+    l match{
+      case Nil=>Nil
+      case h::tail=>h::h::duplicate(tail)
+    }
+  }
+}

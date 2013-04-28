@@ -68,4 +68,11 @@ class SolutionTest extends JUnitSuite {
       List((4,'a), (1,'b), (2,'c), (2,'a), (1,'d), (4,'e)),
       P13.encodeDirect(List('a, 'a, 'a, 'a, 'b, 'c, 'c, 'a, 'a, 'd, 'e, 'e, 'e, 'e)))
   }
+  @Test
+  def duplicate(){
+    assertEquals(
+      List('a, 'a, 'b, 'b, 'c, 'c, 'c, 'c, 'd, 'd),
+      P14.duplicate(List('a, 'b, 'c, 'c, 'd)))
+  }
+  
 } 
